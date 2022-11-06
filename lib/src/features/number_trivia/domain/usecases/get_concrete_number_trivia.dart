@@ -1,13 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:clean_tdd_trivia_app/src/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-
-import 'package:clean_tdd_trivia_app/src/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 
 import '../../../../core/error/failures.dart';
 import '../../../../core/usecases/usecase.dart';
 import '../entities/number_trivia.dart';
 
+//classe contendo a chamada para obter a number trivia
 class GetConcreteNumberTrivia implements Usecase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;
 

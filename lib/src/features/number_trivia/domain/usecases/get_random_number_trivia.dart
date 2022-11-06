@@ -5,6 +5,7 @@ import '../../../../core/usecases/usecase.dart';
 import '../entities/number_trivia.dart';
 import '../repositories/number_trivia_repository.dart';
 
+//classe contendo a chamada para obter a number trivia
 class GetRandomNumberTrivia implements Usecase<NumberTrivia, NoParams>{
   final NumberTriviaRepository repository;
 

@@ -1,11 +1,10 @@
-
 import 'dart:convert';
 
-import 'package:clean_tdd_trivia_app/src/features/number_trivia/domain/entities/number_trivia.dart';
+import '../../domain/entities/number_trivia.dart';
 
 class NumberTriviaModel extends NumberTrivia {
-  
-  const NumberTriviaModel({required super.text, required super.number, required super.found});
+  const NumberTriviaModel(
+      {required super.text, required super.number, required super.found});
 
   @override
   Map<String, dynamic> toMap() {
@@ -15,11 +14,10 @@ class NumberTriviaModel extends NumberTrivia {
       'found': found,
     };
   }
-  
+
   @override
   String toJson() => jsonEncode(toMap());
 
-  
   factory NumberTriviaModel.fromMap(Map<String, dynamic> map) {
     return NumberTriviaModel(
       text: map['text'],
@@ -27,4 +25,7 @@ class NumberTriviaModel extends NumberTrivia {
       found: map['found'],
     );
   }
+
+  factory NumberTriviaModel.fromJson(String source) =>
+      NumberTriviaModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }

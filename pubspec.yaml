@@ -15,13 +15,18 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
-  get_it: ^7.2.0
   flutter_mobx: ^2.0.6+4
+  get_it: ^7.2.0
   equatable: ^2.0.5
   dartz: ^0.10.1
-  connectivity_plus: ^0.0.1
+
+
+  internet_connection_checker_plus: ^1.0.1
+  http: ^0.13.5
   dio: ^4.0.6
-  shared_preferences: ^0.5.5
+  shared_preferences: ^2.0.15
+
+  
 # 
 
 # 

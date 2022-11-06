@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+//Modelo padrão para erros futuros
 abstract class Failure extends Equatable{
   final List properties = const<dynamic>[];
 
@@ -8,3 +9,7 @@ abstract class Failure extends Equatable{
 
   const Failure([properties]) ;
 }
+//General Failures
+class ServerFailure extends Failure{}
+
+class CacheFailure extends Failure{}

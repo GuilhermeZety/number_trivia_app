@@ -2,6 +2,8 @@ import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
 
+//classe padrão para todo o projeto
+//tendo todas as informações que serão passadas para os demais
 class NumberTrivia extends Equatable {
   @override
   List<Object> get props => [text, number, found];
